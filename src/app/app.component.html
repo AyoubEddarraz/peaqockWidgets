@@ -1,0 +1,47 @@
+<div class="tradeContainer row my-4">
+
+  <div class="tradeDesc" *ngFor="let item of tradeData; index as i">
+    <div class="content p-3 shadow-sm rounded" *ngIf="hovredItem == i" >
+      <p> {{ item.desc }} </p>
+      <div class="close" (click)="closeItem()">X</div>
+    </div>
+  </div>
+  <!-- Add On Hover Event With Index Of Any Parte Of Data Trade and in Hover On Change The Element Data With Your Index -->
+
+  <div class="tradeCircle row shadow-sm">
+    <div class="chosse1 col-sm-6" *ngFor="let item of tradeData; index as i" (mousemove)="hovredItemFun(i)" > {{ item.title }} </div>
+  </div>
+
+</div>
+
+<hr>
+
+<div class="slideMenu w-100 p-5">
+  <div class="menu shadow-sm">
+    <span>Bank</span>
+    <ul>
+      <li>hello</li>
+      <li>hellowolrd</li>
+      <li>teste</li>
+      <li>Hellowolrd</li>
+    </ul>
+  </div>
+  <div class="menu shadow-sm">
+    <span>Finance</span>
+    <ul>
+      <li>hello</li>
+      <li>hellowolrd</li>
+      <li>teste</li>
+      <li>Hellowolrd</li>
+    </ul>
+  </div>
+  <div class="menu shadow-sm">
+    <span>Other</span>
+    <ul>
+      <li>hello</li>
+      <li>hellowolrd</li>
+      <li>teste</li>
+      <li>Hellowolrd</li>
+    </ul>
+  </div>
+</div>
